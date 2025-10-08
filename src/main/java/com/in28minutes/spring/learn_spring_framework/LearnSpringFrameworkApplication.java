@@ -3,6 +3,7 @@ package com.in28minutes.spring.learn_spring_framework;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 
 import com.in28minutes.spring.learn_spring_framework.game.GameRunner;
 import com.in28minutes.spring.learn_spring_framework.game.MarioGame;
@@ -11,6 +12,7 @@ import com.in28minutes.spring.learn_spring_framework.game.SuperContraGame;
 import com.in28minutes.spring.learn_spring_framework.game.GamingConsole;
 
 @SpringBootApplication
+@ComponentScan("com.in28minutes.spring.learn_spring_framework")
 public class LearnSpringFrameworkApplication {
 
 	public static void main(String[] args) {

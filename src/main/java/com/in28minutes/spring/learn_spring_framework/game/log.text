@@ -1,3 +1,5 @@
+1.
+
 ***************************
 APPLICATION FAILED TO START
 ***************************
@@ -18,6 +20,8 @@ GamingRunner try to find GamingConsole (parameter 0) bean but not registered in 
 
 Multiple Component injected from 1 interface (GamingConsole)
 
+2. 
+
 ***************************
 APPLICATION FAILED TO START
 ***************************
@@ -34,3 +38,13 @@ This may be due to missing parameter name information
 Action:
 
 Consider marking one of the beans as @Primary, updating the consumer to accept multiple beans, or using @Qualifier to identify the bean that should be consumed
+
+3. 
+
+Exception in thread "main" org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.in28minutes.spring.learn_spring_framework.game.GameRunner' available
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:395)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBean(DefaultListableBeanFactory.java:386)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1290)
+	at com.in28minutes.spring.learn_spring_framework.LearnSpringFrameworkApplication.main(LearnSpringFrameworkApplication.java:26)
+
+Karena GameRunner beannya tidak terscan component dari spring application
