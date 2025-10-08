@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
+
 import com.in28minutes.spring.learn_spring_framework.enterprise.example.data.DataService;
 
 @Component
